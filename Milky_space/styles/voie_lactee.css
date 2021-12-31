@@ -1,0 +1,209 @@
+html,
+body {
+  margin: 0px;
+  padding: 0px;
+}
+img {
+  top: 0px;
+  left: 0px;
+  width: 150px;
+  height: 200px;
+
+  background-repeat: no-repeat;
+  background-position: left top;
+  position: relative;
+}
+.en-tete {
+  font-size: 30px;
+  color: #ffffff !important;
+  font-family: monospace;
+  text-align: center;
+  position: center;
+  background-image: url(31370.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 200px;
+  font-weight: 200px;
+  padding: 20px;
+  z-index: 0;
+}
+.s-m {
+  position: absolute;
+  top:0%;
+  right: 0%;
+  
+  display: flex-end flex-start;
+  max-width: 700px;
+  z-index: 15;
+}
+.s-m a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #f1f1f1;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  transition: 0.4s all;
+  line-height: 40px;
+  cursor: pointer;
+  background: #314652;
+  border-radius: 50%;
+}
+.s-m a:hover {
+  transform: scale(1.2);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Avenir, sans-serif;
+}
+
+.menu {
+  position: sticky;
+  top: 200px;
+}
+
+.menu nav {
+  width: 100%;
+  margin: 0px auto 40px auto;
+  background-color: transparent;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  float: left;
+  width: 25%; /*100% divisé par le nombre d'éléments de menu*/
+  text-align: center; /*Centre le texte dans les éléments de menu*/
+}
+
+/*Evite que le menu n'ait une hauteur nulle*/
+nav ul::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav a {
+  display: block; /*Toute la surface sera cliquable*/
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+  border-bottom: 2px solid transparent; /*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
+  padding: 3px 0px; /*Agrandit le menu et espace la bordure du texte*/
+}
+
+nav a:hover {
+  color: rgb(43, 152, 241);
+  border-bottom: 2px solid gold;
+}
+.conteneur {
+  margin: 0px 20px;
+  height: 1500px;
+}
+nav li a.current {
+  color: rgb(43, 152, 241);
+  border-bottom: 2px solid gold;
+}
+.zoom {
+  width: 1500px;
+}
+
+body {
+  overflow-y: auto;
+  height: 100%;
+  width: 100%;
+}
+span {
+  font-weight: bold;
+}
+.hist {
+  font-family: monospace;
+  line-height: 1cm;
+  position: absolute;
+  top: 800px;
+  left:40%;
+  }
+
+.VL{
+  font-family: monospace;
+  line-height: 1cm;
+  position: absolute;
+  top: 300px;
+  left: 30px;
+  
+}
+
+#im1{
+  height: 400px;
+  width: 600px;
+  position: absolute;
+  top: 300px;
+  left: 50%;
+}
+#im2{
+  height: 600px;
+  width: 500px;
+  position: absolute;
+  top: 800px;
+  left: 80px;
+}
+#im3{
+  height: 800px;
+  width: 600px;
+  position: absolute;
+  top: 1600px;
+  left: 60%;
+
+}
+#im4{
+  height: 500px;
+  width: 600px;
+  position: absolute;
+  top: 2500px;
+  left: 80px;
+}
+
+#im5{
+  height: 300px;
+  width: 450px;
+  position: absolute;
+  top: 3100px;
+  left: 60%;
+
+}
+.forme{
+  font-family: monospace;
+  line-height: 1cm;
+  position: absolute;
+  top: 1500px;
+  left: 30px;
+}
+.struct{
+  font-family: monospace;
+  line-height: 1cm;
+  position: absolute;
+  top: 2500px;
+  left:45%;
+  }
+  .place{
+    font-family: monospace;
+  line-height: 1cm;
+  position: absolute;
+  top: 3100px;
+  left:10%;
+  }
+ 
+
+
+
+
+

@@ -1,0 +1,697 @@
+html {
+  font-size: 15px; 
+  font-family: "Open Sans", sans-serif; 
+  height: 100%;
+  overflow: auto;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+h2{
+  text-decoration: underline;
+}
+
+img {
+  top: 0px;
+  left: 0px;
+  width: 150px;
+  height: 200px;
+
+  background-repeat: no-repeat;
+  background-position: left top;
+  position: relative;
+}
+.en-tete {
+  font-size: 30px;
+  color: #ffffff !important;
+  font-family: monospace;
+  text-align: center;
+  position: center;
+
+  background-image: url(31370.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 200px;
+  font-weight: 200px;
+  padding: 20px;
+  z-index: 0;
+}
+.s-m {
+  position: absolute;
+  top:0%;
+  right: 0%;
+  
+  display: flex-end flex-start;
+  max-width: 700px;
+  z-index: 15;
+}
+.s-m a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #f1f1f1;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  transition: 0.4s all;
+  line-height: 40px;
+  cursor: pointer;
+  background: #314652;
+  border-radius: 50%;
+}
+.s-m a:hover {
+  transform: scale(1.2);
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Avenir, sans-serif;
+}
+.menu {
+  position: sticky;
+  top: 200px;
+}
+
+.menu nav {
+  width: 100%;
+  margin: 0px auto 40px auto;
+  background-color: transparent;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  float: left;
+  width: 25%; /*100% divisé par le nombre d'éléments de menu*/
+  text-align: center; /*Centre le texte dans les éléments de menu*/
+}
+
+/*Evite que le menu n'ait une hauteur nulle*/
+nav ul::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+nav a {
+  display: block; /*Toute la surface sera cliquable*/
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  color: whitesmoke;
+  border-bottom: 2px solid transparent; /*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
+  padding: 3px 0px; /*Agrandit le menu et espace la bordure du texte*/
+}
+
+nav a:hover {
+  color: rgb(43, 152, 241);
+  border-bottom: 2px solid gold;
+}
+.conteneur {
+  margin: 0px 20px;
+  height: 1500px;
+}
+nav li a.current {
+  color: rgb(43, 152, 241);
+  border-bottom: 2px solid gold;
+}
+.zoom {
+  width: 1500px;
+}
+
+#def {
+  font-family: monospace;
+  font-size: xx-large;
+  position: absolute;
+  top: 300px;
+  left: 0;
+}
+span {
+  font-weight: bold;
+}
+#block {
+  line-height: 1cm;
+  font-family: monospace;
+  font-size: 20px;
+  position: absolute;
+  top: 400px;
+  left: 60%;
+}
+#Ss {
+  position: absolute;
+  top: 400px;
+  right: 0px;
+  left: 8%;
+  height: 50%;
+  width: 50%;
+}
+#soleil{
+  background-image: url(Soleil.png);
+  background-size: 100%;
+}
+details{
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+#Ps {
+  position: relative;
+  top: 10px;
+  left: 0%;
+  height: 50%;
+  width: 50%;
+  border: #000;
+}
+#tips {
+  height: 50%;
+  width: 40%;
+  position: relative;
+  top:10px;
+  left: 0;
+}
+#Plan {
+  font-family: monospace;
+  font-size: 25px;
+  position: absolute;
+  top: 900px;
+  left: 10px;
+}
+#asté{
+  background-image: url(asteroides.png);
+  background-size: 105%;
+}
+#com{
+  background-image: url(comete.png);
+  background-size: 100%;
+}
+#sat{
+  background-image: url(sat.png);
+  background-size: 100%;
+}
+
+info {
+  position: relative;
+  z-index: 24;
+  background-color: #ccc;
+}
+info:hover {
+  z-index: 25;
+  background-color: blue;
+}
+info span {
+  display: none;
+}
+info:hover span {
+  display: block;
+  position: absolute;
+  top: 2em;
+  left: 2em;
+  width: 15em;
+}
+
+details nav {
+  background-color: #34495e;
+  height: 80px;
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  z-index: 999;
+}
+
+
+#logo {
+  height: 80px;
+  margin-left: 20px;
+}
+
+.naines {
+  padding: 40px 40px;
+  max-width: 2000px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+}
+
+.right {
+  float: right !important;
+}
+/* Image zoom on hover + Overlay colour */
+.parent {
+  width: 400px;
+  margin: 2px;
+  height: 320px;
+  border: 1px solid blue;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.child {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/* Several different images */
+.bg-one {
+  background-image: url(Planetes/Pluton.jpg);
+}
+.bg-two {
+  background-image: url(Planetes/Makemake.jpg);
+}
+.bg-three {
+  background-image: url(Planetes/Ceres.jpg);
+}
+.bg-four {
+  background-image: url(Planetes/Eris.jpg);
+}
+.bg-five {
+  background-image: url(Planetes/Haumea.jpg);
+}
+
+.parent a {
+  display: none;
+  font-size: 15px;
+  color: #ffffff !important;
+  font-family: monospace;
+  text-align: center;
+  margin: 35px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 50px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.parent:hover .child,
+.parent:focus .child {
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.parent:hover .child:before,
+.parent:focus .child:before {
+  display: block;
+}
+
+.parent:hover a,
+.parent:focus a {
+  display: block;
+}
+
+.child:before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 73, 94, 0.75);
+}
+
+/* Media Queries */
+@media screen and (max-width: 350px) {
+  .parent {
+    width: 100%;
+    margin: 20px 0px;
+  }
+  .wrapper {
+    padding: 10px 10px;
+  }
+}
+
+.flex-center {
+  width: 50%;
+  min-height: 50vh;
+
+  background: #000;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* media queries */
+
+@media screen and (max-width: 100px) {
+  .naines {
+    width: 100px;
+  }
+  .naines ul li {
+    margin-top: 10px;
+  }
+  .naines ul li.google {
+    margin-left: 60px;
+  }
+}
+
+@media screen and (max-width: 100px) {
+  .naines {
+    width: 150px;
+  }
+  .naines ul li {
+    margin: 15px;
+  }
+  .naines ul li.google {
+    margin-left: 15px;
+  }
+}
+
+.Telluriques {
+  padding: 40px 40px;
+  max-width: 2000px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+}
+
+.right {
+  float: right !important;
+}
+/* Image zoom on hover + Overlay colour */
+.paren {
+  width: 400px;
+  margin: 20px;
+  height: 320px;
+  border: 1px solid blue;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.enfant {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/* Several different images */
+.one {
+  background-image: url(Planetes/Terre.jpg);
+}
+.two {
+  background-image: url(Planetes/venus.jpg);
+}
+.three {
+  background-image: url(Planetes/Mercure.jpg);
+}
+.four {
+  background-image: url(Planetes/Mars.jpg);
+}
+
+.paren a {
+  display: none;
+  font-size: 15px;
+  color: #ffffff !important;
+  font-family: monospace;
+  text-align: center;
+  margin: 35px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 50px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.paren:hover .enfant,
+.paren:focus .enfant {
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.paren:hover .enfant:before,
+.paren:focus .enfant:before {
+  display: block;
+}
+
+.paren:hover a,
+.paren:focus a {
+  display: block;
+}
+
+.enfant:before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 73, 94, 0.75);
+}
+
+/* Media Queries */
+@media screen and (max-width: 350px) {
+  .paren {
+    width: 100%;
+    margin: 20px 0px;
+  }
+  .Telluriques {
+    padding: 20px 20px;
+  }
+}
+
+.flex-center {
+  width: 100%;
+  min-height: 50vh;
+
+  background: #000;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* media queries */
+
+@media screen and (max-width: 100px) {
+  .Telluriques {
+    width: 350px;
+  }
+  .Telluriques ul li {
+    margin-top: 10px;
+  }
+  .wrapper ul li.google {
+    margin-left: 60px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .Telluriques {
+    width: 150px;
+  }
+  .Telluriques ul li {
+    margin: 15px;
+  }
+  .Telluriques ul li.google {
+    margin-left: 15px;
+  }
+}
+
+.geantes {
+  padding: 40px 40px;
+  max-width: 2000px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+}
+
+.right {
+  float: right !important;
+}
+/* Image zoom on hover + Overlay colour */
+.gaz {
+  width: 400px;
+  margin: 20px;
+  height: 320px;
+  border: 1px solid blue;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.euses {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/* Several different images */
+.bg-un {
+  background-image: url(Planetes/Jupiter\ .jpg);
+}
+.bg-deux {
+  background-image: url(Planetes/Saturn.jpg);
+}
+.bg-trois {
+  background-image: url(Planetes/Uranus.jpg);
+}
+.bg-quatre {
+  background-image: url(Planetes/Neptune.jpg);
+}
+
+.gaz a {
+  display: none;
+  font-size: 15px;
+  color: #ffffff !important;
+  font-family: monospace;
+  text-align: center;
+  margin: 35px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 50px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.gaz:hover .euses,
+.gaz:focus .euses {
+  -ms-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.gaz:hover .euses:before,
+.gaz:focus .euses:before {
+  display: block;
+}
+
+.gaz:hover a,
+.gaz:focus a {
+  display: block;
+}
+
+.euses:before {
+  content: "";
+  display: none;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(52, 73, 94, 0.75);
+}
+
+/* Media Queries */
+@media screen and (max-width: 960px) {
+  .gaz {
+    width: 100%;
+    margin: 20px 0px;
+  }
+  .geantes {
+    padding: 20px 20px;
+  }
+}
+
+.flex-center {
+  width: 100%;
+  min-height: 50vh;
+
+  background: #000;
+
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+/* media queries */
+
+@media screen and (max-width: 640px) {
+  .geantes {
+    width: 350px;
+  }
+  .geantes ul li {
+    margin-top: 10px;
+  }
+  .geantes ul li.google {
+    margin-left: 60px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .geantes {
+    width: 150px;
+  }
+  .geantes ul li {
+    margin: 15px;
+  }
+  .geantes ul li.google {
+    margin-left: 15px;
+  }
+}
+
+
