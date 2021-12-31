@@ -1,2 +1,0 @@
-# Projet-GIL
-\documentclass{article}
