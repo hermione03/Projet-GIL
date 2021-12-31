@@ -6,7 +6,10 @@ Pour les effets de menu j'ai fait des recherches sur internet pour trouver l'eff
 
 Pour la carte du ciel je voulais en faire une interactive selon la localisation et l'heure , mais etant limitée a l'html et css et etant debutante en dev-web , cette idee n'a malheuresement pas abbouti...
 
+Ne pas avoir inclus l'onglet carte du ciel dans le menu est voulu pour donner un sans a l'onglet accueil
+
 concernant les resaux sociaux j'ai decidé de mettre ceux de la nasa pour rester dans le theme,mais mis le lien vers mon propre github.
+
 
 
 
